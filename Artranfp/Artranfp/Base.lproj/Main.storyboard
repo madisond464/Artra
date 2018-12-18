@@ -67,12 +67,16 @@
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Cec-2j-Sn8" secondAttribute="trailing" id="FBI-Ys-gin"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="TKr-Ex-rjY" secondAttribute="trailing" constant="20" id="Gbl-ZU-1XW"/>
                             <constraint firstItem="asP-SB-L5L" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="100" id="Hfl-3F-jg6"/>
+                            <constraint firstItem="TKr-Ex-rjY" firstAttribute="top" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="35" id="HhO-8a-ocZ"/>
                             <constraint firstItem="Cec-2j-Sn8" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="JMd-4Z-LLq"/>
                             <constraint firstItem="TKr-Ex-rjY" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="108.5" id="VZV-xz-EFk"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="TKr-Ex-rjY" secondAttribute="trailing" constant="20" id="aer-Mp-oCy"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
+                            <constraint firstItem="asP-SB-L5L" firstAttribute="top" secondItem="TKr-Ex-rjY" secondAttribute="bottom" constant="35" id="edr-gO-xU0"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                             <constraint firstItem="TKr-Ex-rjY" firstAttribute="top" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="50" id="pdL-X7-rhG"/>
+                            <constraint firstItem="TKr-Ex-rjY" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="vZE-9q-jaB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -128,28 +132,91 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HFV-M6-bpX">
-                                <rect key="frame" x="0.0" y="70" width="768" height="904"/>
+                                <rect key="frame" x="0.0" y="60" width="768" height="904"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="307" id="Qx1-9z-RFo">
-                                        <rect key="frame" x="0.0" y="28" width="768" height="307"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="288" id="Qx1-9z-RFo" customClass="ViewControllerTableViewCell" customModule="Artranfp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="768" height="288"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qx1-9z-RFo" id="DDy-GE-pvy">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="306.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="287.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ma8-iU-FXD">
-                                                    <rect key="frame" x="0.0" y="0.0" width="396" height="296"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="shriners.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="Ma8-iU-FXD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="428" height="277"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Ma8-iU-FXD" secondAttribute="height" multiplier="449:296" id="wAm-yC-TdI"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTY-Ie-NmR">
-                                                    <rect key="frame" x="433" y="138" width="298" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Shriners" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTY-Ie-NmR">
+                                                    <rect key="frame" x="471" y="123" width="188" height="41"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="TTY-Ie-NmR" secondAttribute="height" multiplier="64:15" id="C2E-Hd-YHb"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="41"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Ma8-iU-FXD" secondAttribute="bottom" constant="10.5" id="4u7-tI-3u7"/>
+                                                <constraint firstItem="Ma8-iU-FXD" firstAttribute="top" secondItem="DDy-GE-pvy" secondAttribute="top" id="cyH-qG-us9"/>
+                                                <constraint firstItem="TTY-Ie-NmR" firstAttribute="trailing" secondItem="DDy-GE-pvy" secondAttribute="trailingMargin" id="jVB-MO-h5m"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="TTY-Ie-NmR" secondAttribute="bottom" constant="113" id="pUU-Tw-jd3"/>
+                                                <constraint firstItem="Ma8-iU-FXD" firstAttribute="leading" secondItem="DDy-GE-pvy" secondAttribute="leading" id="umW-Mg-sD0"/>
+                                                <constraint firstItem="TTY-Ie-NmR" firstAttribute="top" secondItem="DDy-GE-pvy" secondAttribute="topMargin" constant="112" id="wh9-oZ-3tb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="myImage" destination="Ma8-iU-FXD" id="Gvd-1T-FEd"/>
+                                            <outlet property="myLabel" destination="TTY-Ie-NmR" id="Xhb-uM-Sza"/>
+                                            <outlet property="myimage" destination="Ma8-iU-FXD" id="SiQ-j1-TIU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="290" id="jlt-91-MTw">
+                                        <rect key="frame" x="0.0" y="316" width="768" height="290"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jlt-91-MTw" id="vcE-KY-Fdx" customClass="ViewControllerTableViewCell" customModule="Artranfp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="289.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="peacecorner.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="UPq-d7-a7z">
+                                                    <rect key="frame" x="0.0" y="0.0" width="430" height="279"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Peace Corner" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YnE-qa-xN4">
+                                                    <rect key="frame" x="466" y="122" width="255" height="45"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="41"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="YnE-qa-xN4" secondAttribute="trailing" constant="25" id="iY8-vJ-RPW"/>
+                                                <constraint firstItem="YnE-qa-xN4" firstAttribute="top" secondItem="vcE-KY-Fdx" secondAttribute="topMargin" constant="118" id="nSa-pT-2a4"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="YnE-qa-xN4" secondAttribute="bottom" constant="105" id="w1o-Xg-uLr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="300" id="VEE-rl-ACn">
+                                        <rect key="frame" x="0.0" y="606" width="768" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VEE-rl-ACn" id="vlJ-fN-HKn">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="299.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alive.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="NeA-dN-2XN">
+                                                    <rect key="frame" x="15" y="11" width="419" height="278"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Alive Center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9fh-a3-opB">
+                                                    <rect key="frame" x="465" y="148" width="288" height="45"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="41"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -248,7 +315,10 @@
     </scenes>
     <resources>
         <image name="IMG_2743 2.JPG" width="4032" height="3024"/>
+        <image name="alive.JPG" width="4032" height="3024"/>
         <image name="first" width="30" height="30"/>
+        <image name="peacecorner.PNG" width="1334" height="750"/>
         <image name="second" width="30" height="30"/>
+        <image name="shriners.JPG" width="4032" height="3024"/>
     </resources>
 </document>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Events: UIViewController, UITableViewDataSource, UITableViewDelagate {
+class Events: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let events = ["shriners", "alive", "peacecorner"]
     
@@ -20,7 +20,11 @@ class Events: UIViewController, UITableViewDataSource, UITableViewDelagate {
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     
     {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
         
+        cell.myImage.image = UIImage(named: events[indexPath.row] + ".jpg")
+        
+        return (cell)
     }
     
     
