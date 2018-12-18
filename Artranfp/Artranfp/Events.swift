@@ -8,7 +8,22 @@
 
 import UIKit
 
-class Events: UIViewController {
+class Events: UIViewController, UITableViewDataSource, UITableViewDelagate {
+    
+    let events = ["shriners", "alive", "peacecorner"]
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return (events.count)
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    
+    {
+        
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
